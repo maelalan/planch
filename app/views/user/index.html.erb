@@ -1,0 +1,28 @@
+<% @users = User.all %>
+
+<h1>Listing users</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>email</th>
+	  <th>Edit</th>
+      <th>Destroy</th>
+    
+    </tr>
+  </thead>
+
+  <tbody>
+	<% @users.each do |user| %>
+      <tr>
+        <td><%= user.email %></td>
+        <td><%= link_to 'Edit',  edit_user_registration_path(user) %></td>
+        <td><%= link_to 'Destroy',  cancel_user_registration_path(user)  %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nouvel Utilisateur',  new_user_registration_path  %>

@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @charge.user_id %>
+</p>
+
+<p>
+  <strong>Category:</strong>
+  <%= @charge.category_id %>
+</p>
+
+<p>
+  <strong>Week:</strong>
+  <%= @charge.week_id %>
+</p>
+
+<%= link_to 'Edit', edit_charge_path(@charge) %> |
+<%= link_to 'Back', charges_path %>

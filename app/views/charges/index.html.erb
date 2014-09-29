@@ -1,0 +1,31 @@
+<h1>Listing charges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Category</th>
+      <th>Week</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @charges.each do |charge| %>
+      <tr>
+        <td><%= charge.user_id %></td>
+        <td><%= charge.category_id %></td>
+        <td><%= charge.week_id %></td>
+        <td><%= link_to 'Show', charge %></td>
+        <td><%= link_to 'Edit', edit_charge_path(charge) %></td>
+        <td><%= link_to 'Destroy', charge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Charge', new_charge_path %>

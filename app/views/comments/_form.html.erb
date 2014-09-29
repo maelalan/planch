@@ -1,0 +1,16 @@
+<%= semantic_form_for @comment do |f| %>
+<%= f.semantic_errors %>
+
+<%= f.inputs do %>
+	<%= f.input :user, :include_blank => false, :collection => User.all.map {|u| [u.email, u.id]}%>
+	<%= f.input :com %>
+	
+	<% end %>
+
+  <%= f.actions do %>
+    <%= f.submit :button_html => {:class => "primary"} %>
+  <% end %>
+
+
+
+<% end %>

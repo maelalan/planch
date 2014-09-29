@@ -1,0 +1,17 @@
+<%= semantic_form_for @charge do |f| %>
+<%= f.semantic_errors %>
+
+<%= f.inputs do %>
+	<%= f.input :user, :include_blank => false, :collection => User.all.map {|u| [u.email, u.id]}%>
+	<%= f.input :category,:include_blank => false, :collection => Category.all.map {|u| [u.etat, u.id]}%>
+	<%= f.input :week %>
+	
+	<% end %>
+
+  <%= f.actions do %>
+    <%= f.submit :button_html => {:class => "primary"} %>
+  <% end %>
+
+
+
+<% end %>
