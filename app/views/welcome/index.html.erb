@@ -1,23 +1,6 @@
 <div class="container">
 
 <div ng-controller="IndexCtrl">
-<tr>
-<th>	<h1>{{ title }}</h1> </th>
-    <% if current_user.try(:admin?) %>
-<th>	<h1> i am admin !</h1> </th>
-	<% end %>
-</tr>
-</div>
-
-
-<button ng-click="count = count + 1" ng-init="count=0">
-	Increment
-</button>
-count: {{count}}
-<button ng-mouseover="count =0" >
-	RAZ
-</button>
-</div>
 
 
 
@@ -32,7 +15,7 @@ count: {{count}}
 
 		<div class="col-md-2"> <%= user.email %></div>
 		<% @charges = @user.charges %>
-		<% @charges.limit(6).each do |charge| %>
+		<% @charges.limit(8).each do |charge| %>
 
 
 		<div ng-click="count = count + 1" ng-init="count=0" class="col-md-1  <%= charge.category.etat %>"><%= charge.category.etat %></div>
