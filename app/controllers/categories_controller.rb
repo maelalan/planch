@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   before_action :set_category, only: [:show, :edit, :update, :destroy]
    
    respond_to :json
-   
+  #respond_with Category.all
   # GET /categories
   # GET /categories.json
   def index

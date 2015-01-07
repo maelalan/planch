@@ -1,10 +1,17 @@
 <div class="container">
 
-<div ng-controller="IndexCtrl">
+<div ng-controller="IdentidCtrl">
 
 
 
 <div class="container, body">
+
+
+
+	<div class="row">
+		<div class="col-md-2"> test </div>
+		
+		</div>
 
 	<% @users = User.all %>
 	<% @users.each do |user| %>
@@ -18,7 +25,7 @@
 		<% @charges.limit(8).each do |charge| %>
 
 
-		<div ng-click="count = count + 1" ng-init="count=0" class="col-md-1  <%= charge.category.etat %>"><%= charge.category.etat %></div>
+		<div ng-click="upCharge()" class="col-md-1  <%= charge.category.etat %>"><%= charge.category.etat %></div>
 		
 		<% end %>
 	</div>

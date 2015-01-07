@@ -13,13 +13,14 @@ app.factory "Charge", ["$resource", ($resource) ->
   $scope.charges = Charge.query()
 
 $scope.upCharge = ->
-	#charge = Charge.save($scope.charge)
+#	charge = Charge.save($scope.charge)
 
-$scope.charge.category.id = charge.category.id
+$scope.charge.category.id = Charge.category.id
 
-#	if charge.category.id == 4
-#			charge.category.id = 1
-#		else charge.category.id ++
-	charge.$update()
+#	if charge.category.id == '4'
+#		charge.category.id = '1'
+#	    charge.$update()
+#	else charge.category.id += '1'
+#	    charge.$update()
 
 ]
