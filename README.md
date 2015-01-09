@@ -13,9 +13,9 @@ Minimal team management, work capacity indicator
     * ruby 2.0 min
     * rails 4.0 min
 * Dependencies
-    * Devise autentication
-    * Bootstrap design
-    * Angular Js implementation	
+    * Devise 
+    * Bootstrap 
+    * Angular Js 	
 * Database configuration
     * postgresql 3.2 ready 
 * How to run tests
