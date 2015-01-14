@@ -1,14 +1,13 @@
 # README #
 
-Minimal team management, work capacity indicator
+Minimal team management, work avalibaility indicator
 
 ### What is this repository for? ###
 
-* V 0
+* Starting V0
 
 ### How do I get set up? ###
 
-* Summary of set up
 * Configuration
     * ruby 2.0 min
     * rails 4.0 min
@@ -29,7 +28,7 @@ Minimal team management, work capacity indicator
 
 ### Who do I talk to? ###
 
- Admin
+contact me @ mael.louvet[]gmail.com
 
 ### License ###
 
